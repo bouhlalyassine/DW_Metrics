@@ -5,3 +5,4 @@ streamlit==1.26.0
 streamlit_lottie==0.0.3
 streamlit_option_menu==0.3.2
 msoffcrypto-tool==5.0.1
+openpyxl==3.0.10
