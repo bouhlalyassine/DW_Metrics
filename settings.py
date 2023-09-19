@@ -15,11 +15,6 @@ PAGE_ICON ="ico_potfolio.ico"
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 
-
-# Credentials
-config_assets = current_dir / "hashed_pw_assets.yaml"
-config_Dash = current_dir / "hashed_pw_dash.yaml"
-
 hashed_pw_db_water = current_dir / "H_pkl_pw_water_db.pkl"
 
 pp_logo_portfolio = current_dir / "files" /  "logo_portfolio.png"
