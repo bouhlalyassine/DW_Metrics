@@ -133,7 +133,7 @@ celerybeat.pid
 
 # ------------ DOCS to ignore ------------
 generate_pkl_water_db_pw.py
-
+Other_Scripts
 
 
 
