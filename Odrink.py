@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 import msoffcrypto
 import pickle
 
-# streamlit run Drinking_Water_Metrics.py
+# streamlit run Odrink.py
 st.set_page_config(page_title=TITLE,
     page_icon=PAGE_ICON,
     layout="wide")
@@ -34,7 +34,7 @@ st.markdown("<h2 style=\
     'text-align : center';\
     font-weight : bold ;\
     font-family : Arial;>\
-    Drinking Water Metrics</h2>", unsafe_allow_html=True)
+    Odrink</h2>", unsafe_allow_html=True)
 
 with st.sidebar :
     clickable_img_logo = get_img_with_href(pp_logo_portfolio, 'https://ybouhlal.streamlit.app/', 70, "blank")
@@ -64,7 +64,7 @@ if nav_menu == 'Home':
     st.markdown("<br>", unsafe_allow_html=True)
     colpi1_ac, colpi2_ac = st.columns([75, 25], gap="small")
     with colpi1_ac :
-        st.info("Drinking water metrics, is a webapp that analyzes the quality of drinking water\
+        st.info("Odrink, is a webapp that analyzes the quality of drinking water\
             worldwide from 2000 to 2020. The app consists of three modules :\
             \n● Overview : provides a global view of the quality of drinking water\
             \n● Area Coverage : shows the distribution of drinking water quality in urban and rural areas\
