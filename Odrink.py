@@ -42,7 +42,7 @@ with st.sidebar :
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    clickable_img = get_img_with_href(linkpic_code, 'https://github.com/bouhlalyassine/DW_Metrics',
+    clickable_img = get_img_with_href(linkpic_code, 'https://github.com/bouhlalyassine/Odrink',
         170, "blank")
     st.markdown(clickable_img, unsafe_allow_html=True)
 

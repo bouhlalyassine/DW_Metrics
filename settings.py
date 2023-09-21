@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 import os
 import base64
 
-TITLE = "DW Metrics"
+TITLE = "Odrink"
 PAGE_ICON ="ico_potfolio.ico"
 
 
