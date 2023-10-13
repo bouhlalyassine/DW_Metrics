@@ -10,29 +10,15 @@ import os
 import base64
 
 TITLE = "Odrink"
-PAGE_ICON ="ico_potfolio.ico"
-
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 
 hashed_pw_db_water = current_dir / "H_pkl_pw_water_db.pkl"
 
-pp_logo_portfolio = current_dir / "files" /  "logo_portfolio.png"
-linkpic_code = current_dir / "files" /  "code.png"
-
-# CSS
-css_file = current_dir / "main.css"
 
 locked_water_DB_p = current_dir / "files" / "DB_Water.xlsx"
 locked_water_DB = str(locked_water_DB_p)
 
-# My Tutos :
-# size :
-space = 15
-tuto_space = 70
-
-tuto_W_metrics_p = current_dir / "files" / "tuto_water_metrics.mp4"
-tuto_W_metrics = str(tuto_W_metrics_p)
 
 # lotties :
 lottie_water = current_dir / "files" / "water.json"
@@ -67,7 +53,7 @@ def get_img_with_href(local_img_path, target_url, width, loc):
     return html_code
 
 
-"""====================================== Water Metrics ======================================"""
+"""====================================== Odrink ======================================"""
 
 @st.cache_data 
 def get_data_from_water_DB(water_DB):

@@ -9,7 +9,6 @@ import pickle
 
 # streamlit run Odrink.py
 st.set_page_config(page_title=TITLE,
-    page_icon=PAGE_ICON,
     layout="wide")
 
 # Load Hased DB Password
@@ -26,9 +25,6 @@ with open(locked_water_DB, 'rb') as file:
 
 water_DB = decrypted_workbook
 
-# --- LOAD CSS, PDF & PROFIL PIC ---
-with open(css_file) as f: # Load the CSS file
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 st.markdown("<h2 style=\
     'text-align : center';\
@@ -37,17 +33,6 @@ st.markdown("<h2 style=\
     Odrink</h2>", unsafe_allow_html=True)
 
 with st.sidebar :
-    clickable_img_logo = get_img_with_href(pp_logo_portfolio, 'https://ybouhlal.streamlit.app/', 70, "blank")
-    st.markdown(clickable_img_logo, unsafe_allow_html=True)
-
-    st.markdown("<br>", unsafe_allow_html=True)
-
-    clickable_img = get_img_with_href(linkpic_code, 'https://github.com/bouhlalyassine/Odrink',
-        170, "blank")
-    st.markdown(clickable_img, unsafe_allow_html=True)
-
-    st.markdown("<br>", unsafe_allow_html=True)
-
     nav_menu = option_menu(menu_title=None, options=['Home','Overview', 'Area Coverage', 'Evolution'], 
         default_index=0, orientation="vertical",
         icons=["house","view-list","bar-chart", "graph-up"],
@@ -80,15 +65,7 @@ if nav_menu == 'Home':
             reverse=False,
             loop=True,
             quality="high", # medium ; high ; low
-            height=200)
-    
-    
-    st.markdown("<br>", unsafe_allow_html=True)
-    esp_1, col_vid_tuto, esp_2 = st.columns([space, tuto_space, space], gap="small")
-    with col_vid_tuto :
-        with open(tuto_W_metrics, "rb") as tuto_file:
-            tuto_W_metrics_byte = tuto_file.read()
-        st.video(tuto_W_metrics_byte)
+            height=200) 
 
 
 
